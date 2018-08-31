@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="/js/jquery-1.12.3.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">北京汽车租赁管理系统</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/refers">客人查询</a></li>
+                <li><a href="/rent">租赁登记</a></li>
+                <li><a href="/return">归还登记</a></li>
+                <li class="active"><a href="/statistics">统计分析</a></li>
+                <li><a href="/sorts">类别档案</a></li>
+                <li><a href="/cars">汽车档案</a></li>
+                <li><a href="/out">退出系统</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/tui">退出登录</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">租出统计</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">归还统计</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>行号</th>
+                    <th>租凭名称</th>
+                    <th>租凭人</th>
+                    <th>租凭时长</th>
+                    <th>每天租金</th>
+                    <th>合计金额</th>
+                    <th>租凭日期</th>
+                    <th>操作员</th>
+                </tr>
+                </thead>
+                <tbody id="zuchut">
+                </tbody>
+            </table>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>行号</th>
+                    <th>租凭名称</th>
+                    <th>租凭人</th>
+                    <th>实收金额</th>
+                    <th>找零金额</th>
+                    <th>归还日期</th>
+                    <th>操作员</th>
+                </tr>
+                </thead>
+                <tbody id="zuchug">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
